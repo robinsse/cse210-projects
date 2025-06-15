@@ -25,6 +25,31 @@ public class GoalManager
             Console.WriteLine("5. Record");
             Console.WriteLine("6. Quit");
             menu = Console.ReadLine();
+
+            if (menu == "1")
+            {
+                CreateGoal();
+            }
+            else if (menu == "2")
+            {
+                ListGoalDetails();
+            }
+            else if (menu == "3")
+            {
+                SaveGoals();
+            }
+            else if (menu == "4")
+            {
+                LoadGoals();
+            }
+            else if (menu == "5")
+            {
+                RecordEvent();
+            }
+            else if (menu != "6")
+            {
+                Console.WriteLine("Please select a valid entry. ");
+            }
         }
     }
 
